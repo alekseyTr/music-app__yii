@@ -1,0 +1,867 @@
+2016/05/10 15:30:39 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "contact".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('contact')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/contact
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=site/page&view=about
+---
+2016/05/11 00:57:43 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "contact".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('contact', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(72): CController->render('contact', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('contact')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/contact
+---
+2016/05/11 00:59:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:483
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(270): CController->missingAction('about')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('about')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/about
+---
+2016/05/11 03:39:57 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('login')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/login
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=artists
+---
+2016/05/11 10:38:52 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('login')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/login
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=artists
+---
+2016/05/11 10:39:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('login')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/login
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=artists
+---
+2016/05/11 10:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:483
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(270): CController->missingAction('about')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('about')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/about
+---
+2016/05/11 11:25:43 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:878
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('login')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/login
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=artists/create
+---
+2016/05/11 12:45:24 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CDetailView.php:139
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CDetailView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 12:48:32 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CDetailView.php:139
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CDetailView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 12:51:47 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CBaseListView.php:123
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CListView->init()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(36): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 12:54:09 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CDetailView.php:139
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CDetailView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 12:56:52 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CBaseListView.php:123
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CListView->init()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(30): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 13:53:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Mikle' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_artists` `t` WHERE Mikle LIMIT 1.
+2016/05/11 13:53:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Mikle' in 'where clause'' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(12): CActiveRecord->find('Mikle')
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 13:57:45 [error] [php] Object of class Artists could not be converted to string (E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php:13)
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): SiteController->renderFile()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): SiteController->renderPartial()
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): SiteController->render()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): SiteController->runAction()
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): SiteController->run()
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/music_app/testdrive/index.php
+2016/05/11 15:03:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty. The SQL statement executed was: .
+2016/05/11 15:03:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(17): CDbCommand->queryAll()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 15:10:18 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music-app.tbl_artists_' doesn't exist. The SQL statement executed was: SELECT name_artist FROM tbl_artists_.
+2016/05/11 15:10:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music-app.tbl_artists_' doesn't exist' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php(17): CDbCommand->query()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', NULL, true)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', NULL, true)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): CController->render('index')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('')
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/music_app/testdrive/index.php
+---
+2016/05/11 15:23:46 [error] [php] Invalid argument supplied for foreach() (E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\site\index.php:26)
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): SiteController->renderFile()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): SiteController->renderPartial()
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\SiteController.php(32): SiteController->render()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(286): SiteController->runAction()
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): SiteController->run()
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/music_app/testdrive/index.php
+2016/05/11 20:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:483
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(270): CController->missingAction('login')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('login')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=site/login
+---
+2016/05/11 20:57:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('update')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/update')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/update
+---
+2016/05/11 21:04:20 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(79): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:09:44 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:09:53 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:13:50 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:14:05 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:16:11 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(42): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:25:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`)). The SQL statement executed was: INSERT INTO `tbl_tracks` (`track`, `length`, `albom_id`) VALUES (:yp0, :yp1, :yp2).
+2016/05/11 21:25:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`))' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(73): CActiveRecord->save()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:26:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`)). The SQL statement executed was: INSERT INTO `tbl_tracks` (`track`, `length`, `albom_id`) VALUES (:yp0, :yp1, :yp2).
+2016/05/11 21:26:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`))' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(73): CActiveRecord->save()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:28:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`)). The SQL statement executed was: INSERT INTO `tbl_tracks` (`track`, `length`, `albom_id`) VALUES (:yp0, :yp1, :yp2).
+2016/05/11 21:28:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`music-app`.`tbl_tracks`, CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`))' in E:\Clouds\MEGA\domains\tests\music_app\framework\db\CDbCommand.php:358
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(73): CActiveRecord->save()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:31:16 [error] [exception.CException] exception 'CException' with message 'Property "Tracks.artist" is not defined.' in E:\Clouds\MEGA\domains\tests\music_app\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\db\ar\CActiveRecord.php(145): CComponent->__get('artist')
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('artist')
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(Tracks), 'artist')
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(Tracks), 'artist', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Tracks), 'artist', Array)
+#5 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(30): CActiveForm->textField(Object(Tracks), 'artist')
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(18): CController->renderPartial('_form', Array)
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): CController->render('create', Array)
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#23 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#25 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#26 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=tracks/create
+---
+2016/05/11 21:55:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 22:14:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 22:21:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 22:22:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 22:58:19 [error] [php] Illegal string offset 'name' (E:\Clouds\MEGA\domains\tests\music_app\framework\web\helpers\CHtml.php:2658)
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\_form.php(36): CActiveForm->textField()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): TracksController->renderInternal()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): TracksController->renderFile()
+#4 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\create.php(19): TracksController->renderPartial()
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require()
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): TracksController->renderInternal()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): TracksController->renderFile()
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): TracksController->renderPartial()
+#9 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(111): TracksController->render()
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): TracksController->runAction()
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): TracksController->filterAccessControl()
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): TracksController->runActionWithFilters()
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): TracksController->run()
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CWebApplication->run()
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+2016/05/11 23:23:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:23:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:24:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:24:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:25:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:26:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php:336
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/view')
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/view
+---
+2016/05/11 23:35:27 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CBaseListView.php:123
+Stack trace:
+#0 E:\Clouds\MEGA\domains\tests\music_app\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(147): CListView->init()
+#2 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\views\tracks\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(126): require('E:\\Clouds\\MEGA\\...')
+#5 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\Clouds\\MEGA\\...', Array, true)
+#6 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(869): CBaseController->renderFile('E:\\Clouds\\MEGA\\...', Array, true)
+#7 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 E:\Clouds\MEGA\domains\tests\music_app\testdrive\protected\controllers\TracksController.php(108): CController->render('index', Array)
+#9 E:\Clouds\MEGA\domains\tests\music_app\framework\web\actions\CInlineAction.php(49): TracksController->actionCreate()
+#10 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\Clouds\MEGA\domains\tests\music_app\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(282): CController->run('create')
+#19 E:\Clouds\MEGA\domains\tests\music_app\framework\web\CWebApplication.php(141): CWebApplication->runController('tracks/create')
+#20 E:\Clouds\MEGA\domains\tests\music_app\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\Clouds\MEGA\domains\tests\music_app\testdrive\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/music_app/testdrive/index.php?r=tracks/create
+HTTP_REFERER=http://tests/music_app/testdrive/index.php?r=tracks/create
+---
