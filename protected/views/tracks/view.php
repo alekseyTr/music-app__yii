@@ -20,6 +20,6 @@ $this->menu=array(
 		'id_track',
 		'track',
 		'length',
-		'albom_id',
+		'album_id',
 	),
 )); ?>

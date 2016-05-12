@@ -1,103 +1,62 @@
---
--- Хост: 127.0.0.1:3306
--- Время создания: Май 12 2016 г., 01:42
--- Версия сервера: 5.5.48
--- Версия PHP: 5.6.19
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
+USE `mydb` ;
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- База данных: `music-app`
---
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `tbl_albums`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_albums` (
-  `id_alboms` int(11) NOT NULL,
-  `id_artist` int(11) NOT NULL,
-  `album` varchar(45) NOT NULL,
-  `year` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+-- -----------------------------------------------------
+-- Table `mydb`.`tbl_artists`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tbl_artists` (
+  `id_artist` INT NOT NULL AUTO_INCREMENT,
+  `name_rtist` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_artist`),
+  INDEX `id_artist` ())
+ENGINE = InnoDB;
 
 
--- --------------------------------------------------------
+-- -----------------------------------------------------
+-- Table `mydb`.`tbl_albums`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tbl_albums` (
+  `id_albums` INT NOT NULL AUTO_INCREMENT,
+  `id_artist` INT NULL,
+  `albom` VARCHAR(45) NULL,
+  `year` INT NULL,
+  PRIMARY KEY (`id_albums`),
+  INDEX `id_artist` (),
+  INDEX `id_alboms` (),
+  INDEX `id_artist_idx` (`id_artist` ASC),
+  CONSTRAINT `id_artist`
+    FOREIGN KEY (`id_artist`)
+    REFERENCES `mydb`.`tbl_artists` (`id_artist`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
---
--- Структура таблицы `tbl_artists`
---
 
-CREATE TABLE IF NOT EXISTS `tbl_artists` (
-  `id_artist` int(11) NOT NULL,
-  `name_artist` varchar(45) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+-- -----------------------------------------------------
+-- Table `mydb`.`tbl_tracks`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `mydb`.`tbl_tracks` (
+  `id_track` INT NOT NULL AUTO_INCREMENT,
+  `albom_id` INT NULL,
+  `track` VARCHAR(45) NULL,
+  `length` FLOAT NULL,
+  PRIMARY KEY (`id_track`),
+  INDEX `albom_id_idx` (`albom_id` ASC),
+  CONSTRAINT `albom_id`
+    FOREIGN KEY (`albom_id`)
+    REFERENCES `mydb`.`tbl_albums` (`id_albums`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
 
--- --------------------------------------------------------
 
---
--- Структура таблицы `tbl_tracks`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_tracks` (
-  `id_track` int(11) NOT NULL,
-  `track` varchar(45) NOT NULL,
-  `length` float NOT NULL,
-  `albom_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `tbl_tracks`
---
---
--- Индексы сохранённых таблиц
---
-
---
--- Индексы таблицы `tbl_alboms`
---
-ALTER TABLE `tbl_alboms`
-  ADD PRIMARY KEY (`id_alboms`),
-  ADD KEY `id_alboms` (`id_alboms`);
-
---
--- Индексы таблицы `tbl_artists`
---
-ALTER TABLE `tbl_artists`
-  ADD PRIMARY KEY (`id_artist`),
-  ADD KEY `id_artist` (`id_artist`);
-
---
--- Индексы таблицы `tbl_tracks`
---
-ALTER TABLE `tbl_tracks`
-  ADD PRIMARY KEY (`id_track`),
-  ADD KEY `artist_id` (`albom_id`);
---
--- Ограничения внешнего ключа сохраненных таблиц
---
-
---
--- Ограничения внешнего ключа таблицы `tbl_alboms`
---
-ALTER TABLE `tbl_alboms`
-  ADD CONSTRAINT `tbl_alboms_ibfk_1` FOREIGN KEY (`id_artist`) REFERENCES `tbl_artists` (`id_artist`);
-
---
--- Ограничения внешнего ключа таблицы `tbl_tracks`
---
-ALTER TABLE `tbl_tracks`
-  ADD CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

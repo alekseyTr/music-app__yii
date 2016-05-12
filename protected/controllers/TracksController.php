@@ -82,25 +82,25 @@ class TracksController extends Controller
 	{
 		$model=new Tracks;
 
-		$albom_model = new Alboms;
+		$album_model = new albums;
 		$artist_model = new Artists;
 
   // Uncomment the following line if AJAX validation is needed
   // $this->performAjaxValidation($model);
 
-		if(isset($_POST['Tracks']) && isset($_POST['artist']) && isset($_POST['albom']) && isset($_POST['year']))
+		if(isset($_POST['Tracks']) && isset($_POST['artist']) && isset($_POST['album']) && isset($_POST['year']))
 		{
 			$model->attributes=$_POST['Tracks'];
 
 			$artist_model->name_artist = $_POST['artist'];
 			$artist_model->save();
 
-			$albom_model->albom = $_POST['albom'];
-			$albom_model->year = $_POST['year'];
-			$albom_model->id_artist = $artist_model->id_artist;
-			$albom_model->save();
+			$album_model->album = $_POST['album'];
+			$album_model->year = $_POST['year'];
+			$album_model->id_artist = $artist_model->id_artist;
+			$album_model->save();
 
-			$model->albom_id = $albom_model->id_alboms;
+			$model->album_id = $album_model->id_albums;
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_track));

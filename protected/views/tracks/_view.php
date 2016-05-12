@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->length); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('albom_id')); ?>:</b>
-	<?php echo CHtml::encode($data->albom_id); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('album_id')); ?>:</b>
+	<?php echo CHtml::encode($data->album_id); ?>
 	<br />
 
 

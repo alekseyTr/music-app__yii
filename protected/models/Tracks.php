@@ -7,10 +7,10 @@
  * @property integer $id_track
  * @property string $track
  * @property double $length
- * @property integer $albom_id
+ * @property integer $album_id
  *
  * The followings are the available model relations:
- * @property Alboms $albom
+ * @property albums $album
  */
 class Tracks extends CActiveRecord
 {
@@ -30,13 +30,13 @@ class Tracks extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('track, length, albom_id', 'required'),
-			array('albom_id', 'numerical', 'integerOnly'=>true),
+			array('track, length, album_id', 'required'),
+			array('album_id', 'numerical', 'integerOnly'=>true),
 			array('length', 'numerical'),
 			array('track', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_track, track, length, albom_id', 'safe', 'on'=>'search'),
+			array('id_track, track, length, album_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -48,7 +48,7 @@ class Tracks extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'albom' => array(self::BELONGS_TO, 'Alboms', 'albom_id'),
+			'album' => array(self::BELONGS_TO, 'albums', 'album_id'),
 		);
 	}
 
@@ -61,7 +61,7 @@ class Tracks extends CActiveRecord
 			'id_track' => 'Id Track',
 			'track' => 'Track',
 			'length' => 'Length',
-			'albom_id' => 'Albom',
+			'album_id' => 'album',
 		);
 	}
 
@@ -86,7 +86,7 @@ class Tracks extends CActiveRecord
 		$criteria->compare('id_track',$this->id_track);
 		$criteria->compare('track',$this->track,true);
 		$criteria->compare('length',$this->length);
-		$criteria->compare('albom_id',$this->albom_id);
+		$criteria->compare('album_id',$this->album_id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

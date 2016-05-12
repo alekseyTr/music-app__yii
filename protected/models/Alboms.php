@@ -1,26 +1,26 @@
 <?php
 
 /**
- * This is the model class for table "{{alboms}}".
+ * This is the model class for table "{{albums}}".
  *
- * The followings are the available columns in table '{{alboms}}':
- * @property integer $id_alboms
+ * The followings are the available columns in table '{{albums}}':
+ * @property integer $id_albums
  * @property integer $id_artist
- * @property string $albom
+ * @property string $album
  * @property integer $year
  *
  * The followings are the available model relations:
  * @property Artists $idArtist
  * @property Tracks[] $tracks
  */
-class Alboms extends CActiveRecord
+class albums extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{alboms}}';
+		return '{{albums}}';
 	}
 
 	/**
@@ -31,12 +31,12 @@ class Alboms extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_artist, albom, year', 'required'),
+			array('id_artist, album, year', 'required'),
 			array('id_artist, year', 'numerical', 'integerOnly'=>true),
-			array('albom', 'length', 'max'=>45),
+			array('album', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_alboms, id_artist, albom, year', 'safe', 'on'=>'search'),
+			array('id_albums, id_artist, album, year', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,7 +49,7 @@ class Alboms extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'idArtist' => array(self::BELONGS_TO, 'Artists', 'id_artist'),
-			'tracks' => array(self::HAS_MANY, 'Tracks', 'albom_id'),
+			'tracks' => array(self::HAS_MANY, 'Tracks', 'album_id'),
 		);
 	}
 
@@ -59,9 +59,9 @@ class Alboms extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_alboms' => 'Id Alboms',
+			'id_albums' => 'Id albums',
 			'id_artist' => 'Id Artist',
-			'albom' => 'Albom',
+			'album' => 'album',
 			'year' => 'Year',
 		);
 	}
@@ -84,9 +84,9 @@ class Alboms extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id_alboms',$this->id_alboms);
+		$criteria->compare('id_albums',$this->id_albums);
 		$criteria->compare('id_artist',$this->id_artist);
-		$criteria->compare('albom',$this->albom,true);
+		$criteria->compare('album',$this->album,true);
 		$criteria->compare('year',$this->year);
 
 		return new CActiveDataProvider($this, array(
@@ -98,7 +98,7 @@ class Alboms extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Alboms the static model class
+	 * @return albums the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

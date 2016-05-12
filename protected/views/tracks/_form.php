@@ -40,7 +40,7 @@
 
 	<div class="row">
 		<div class="col-xs-12 col-lg-6">
-			<input type="text" name="albom" placeholder="Альбом">
+			<input type="text" name="album" placeholder="Альбом">
 		</div>
 		<div class="col-xs-12 col-lg-6">
 			<input type="text" name="year" placeholder="Год">
