@@ -1,9 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 4.4.15.5
--- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 11 2016 г., 03:13
+-- Время создания: Май 12 2016 г., 01:42
 -- Версия сервера: 5.5.48
 -- Версия PHP: 5.6.19
 
@@ -23,15 +20,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `tbl_alboms`
+-- Структура таблицы `tbl_albums`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_alboms` (
-  `id` int(11) NOT NULL,
-  `albom` varchar(45) NOT NULL,
-  `year` int(11) NOT NULL,
-  `name_artist` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `tbl_albums` (
+  `id_alboms` int(11) NOT NULL,
+  `id_artist` int(11) NOT NULL,
+  `album` varchar(45) NOT NULL,
+  `year` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
 
 -- --------------------------------------------------------
 
@@ -40,9 +38,9 @@ CREATE TABLE IF NOT EXISTS `tbl_alboms` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_artists` (
-  `id` int(11) NOT NULL,
+  `id_artist` int(11) NOT NULL,
   `name_artist` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -51,11 +49,15 @@ CREATE TABLE IF NOT EXISTS `tbl_artists` (
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_tracks` (
-  `id` int(11) NOT NULL,
+  `id_track` int(11) NOT NULL,
   `track` varchar(45) NOT NULL,
-  `length` float NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `length` float NOT NULL,
+  `albom_id` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `tbl_tracks`
+--
 --
 -- Индексы сохранённых таблиц
 --
@@ -64,39 +66,38 @@ CREATE TABLE IF NOT EXISTS `tbl_tracks` (
 -- Индексы таблицы `tbl_alboms`
 --
 ALTER TABLE `tbl_alboms`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_alboms`),
+  ADD KEY `id_alboms` (`id_alboms`);
 
 --
 -- Индексы таблицы `tbl_artists`
 --
 ALTER TABLE `tbl_artists`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_artist`),
+  ADD KEY `id_artist` (`id_artist`);
 
 --
 -- Индексы таблицы `tbl_tracks`
 --
 ALTER TABLE `tbl_tracks`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id_track`),
+  ADD KEY `artist_id` (`albom_id`);
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
---
-
---
--- AUTO_INCREMENT для таблицы `tbl_alboms`
+-- Ограничения внешнего ключа таблицы `tbl_alboms`
 --
 ALTER TABLE `tbl_alboms`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  ADD CONSTRAINT `tbl_alboms_ibfk_1` FOREIGN KEY (`id_artist`) REFERENCES `tbl_artists` (`id_artist`);
+
 --
--- AUTO_INCREMENT для таблицы `tbl_artists`
---
-ALTER TABLE `tbl_artists`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT для таблицы `tbl_tracks`
+-- Ограничения внешнего ключа таблицы `tbl_tracks`
 --
 ALTER TABLE `tbl_tracks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  ADD CONSTRAINT `tbl_tracks_ibfk_1` FOREIGN KEY (`albom_id`) REFERENCES `tbl_alboms` (`id_alboms`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
